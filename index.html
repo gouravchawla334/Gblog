@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Gblog</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Gblog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">About</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="mx-2 my-2">
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignupModal">Register</button>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login to Gblog</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#">
+            <div class="container">
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" id="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+              <hr>
+          
+              <button type="submit" class="registerbtn">Login</button>
+            </div>
+          
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sing upModal -->
+  <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SignupModalLabel">Register</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#">
+            <div class="container">
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+              <hr>
+
+              <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+              <button type="submit" class="registerbtn">Register</button>
+            </div>
+
+            <div class="container signin">
+              <p>Already have an account? <a href="#">Sign in</a>.</p>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./photos/s1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to GBlog </h5>
+          <p>Technology News, Development and Trends</p>
+          <button class="btn-danger">Technology</button>
+          <button class="btn-primary">Web development</button>
+          <button class="btn-success">Tech News</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./photos/s2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Gblog - The best coding blog</h5>
+          <p>Technology News, Development and Trends</p>
+          <button class="btn-danger">Technology</button>
+          <button class="btn-primary">Web development</button>
+          <button class="btn-success">Tech News</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./photos/s3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Award Wining blog </h5>
+          <p>Technology News, Development and Trends</p>
+          <button class="btn-danger">Technology</button>
+          <button class="btn-primary">Web development</button>
+          <button class="btn-success">Tech News</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Tech</strong>
+            <h3 class="mb-0">Web Development</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">Web Development | News, how-tos, features, reviews, and videos. ... build, and dependency management tools is making JavaScript development simpler, ...
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="./photos/f1.jpg" alt="">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Design</strong>
+            <h3 class="mb-0">App Development</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">App Development News, Data & Analysis. The latest news from the global app industry. All App BusinessMobile AdvertisingApp MarketingApp Development​App ...</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="./photos/f2.jpg" alt="">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-4">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Tech</strong>
+              <h3 class="mb-0">Artifical Intelligent</h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">Science X Daily and the Weekly Email Newsletter are free features that allow you to receive your favorite sci-tech news updates in your email inbox.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="200" height="250" src="./photos/f3.jpg" alt="">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Design</strong>
+              <h3 class="mb-0">Machine Learning</h3>
+              <div class="mb-1 text-muted">Dec 11</div>
+              <p class="mb-auto">Machine Learning News ... This group serves as a forum for notices and announcements of interest to the machine learning community. This includes events, calls ..</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="200" height="250" src="./photos/f4.jpg" alt="">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- START THE FEATURETTES -->
+      <hr class="featurette-divider">
+
+      <div class="row featurette d-flex justify-content-center align-items-center">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Samsung Odyssey G3, Odyssey G5, Odyssey G7 Gaming Monitors With 178 Degrees Viewing Angle Launched <span class="text-muted">It’ll blow your mind.</span>
+          </h2>
+          <p class="lead">The South Korean tech giant announced its three new gaming monitors — Samsung Odyssey G3, Samsung Odyssey G5, and Samsung Odyssey G7 — will start selling globally starting today, June 21.</p>
+        </div>
+        <div class="col-md-5">
+          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+          <img src="./photos/6.jpg" alt=""
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette d-flex justify-content-center align-items-center">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Chinese Apps Said to Face Subpoenas  <span class="text-muted">or Bans Under US President Joe Biden’s Order.</span></h2>
+          <p class="lead">Biden's June 9 order replaced former President Donald Trump's 2020 bans against the popular Chinese applications WeChat, owned by Tencent, and ByteDance's TikTok. US courts halted those bans.
+
+            US officials share many of the concerns Trump cited in his order banning TikTok, according to one person familiar with the matter. Notably, they fear that China could track the locations of US government employees, build dossiers of personal information for blackmail and conduct corporate espionage.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+          <img src="./photos/5.jpg" alt=""
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider d-flex justify-content-center align-items-center">
+
+      <div class="row featurette d-flex justify-content-center align-items-center">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Solidifying Absolute and Relative Data Quality with Master Data Management</h2>
+          <p class="lead">n this contributed article, editorial consultant Jelani Harper highlights that contrary to popular belief, data are not the oil, fuel, energy, or life force coursing through the enterprise to inform decision-making, engender insights, and propel timely business action rooted in concrete facts. Data quality is.</p>
+        </div>
+        <div class="col-md-5">
+          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+          <img src="./photos/8.jpg" alt=""
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider d-flex justify-content-center align-items-center">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div>
+
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>© 2020–2021 Gblog, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
