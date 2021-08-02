@@ -9,7 +9,7 @@ https://gouravblog.netlify.app/
 ![image]()
 ## Mobile view
 
-![image]()
+![image](https://github.com/gourav-chawla/Gblog/blob/main/blog/1.jpg)
 
 ## Blog page
 
