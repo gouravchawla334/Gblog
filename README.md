@@ -14,6 +14,7 @@ https://gouravblog.netlify.app/
 ## Blog page
 
 ![image](https://github.com/gourav-chawla/Gblog/blob/main/blog/2.jpg)
+![image](https://github.com/gourav-chawla/Gblog/blob/main/blog/4.jpg)
 
 ## Contact Us Page
 
