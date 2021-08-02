@@ -13,7 +13,7 @@ https://gouravblog.netlify.app/
 
 ## Blog page
 
-![image]()
+![image](https://github.com/gourav-chawla/Gblog/blob/main/blog/2.jpg)
 
 ## Contact Us Page
 
